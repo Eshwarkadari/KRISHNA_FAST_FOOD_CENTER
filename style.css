@@ -1,70 +1,120 @@
 body{
+
 margin:0;
-font-family:Arial;
+font-family:Poppins;
 background:#111;
 color:white;
+
+}
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:black;
+
+}
+
+nav ul{
+
+list-style:none;
+display:flex;
+gap:20px;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+
 }
 
 .hero{
+
 background:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") center/cover;
 height:90vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+
 }
 
-.hero-text h1{
+.hero h1{
+
 font-size:60px;
+
 }
 
 .btn{
+
 background:red;
 padding:15px 30px;
-color:white;
-text-decoration:none;
 border-radius:30px;
+text-decoration:none;
+color:white;
+
 }
 
 section{
+
 padding:60px;
 text-align:center;
+
 }
 
-.menu-container{
+.menu-grid{
+
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
+
 }
 
 .menu-card{
+
 background:#222;
 border-radius:10px;
-padding:15px;
+overflow:hidden;
 transition:0.3s;
+
 }
 
 .menu-card:hover{
+
 transform:scale(1.05);
+
 }
 
 .menu-card img{
+
 width:100%;
-border-radius:10px;
+height:180px;
+object-fit:cover;
+
 }
 
 .gallery-grid{
+
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:10px;
+
 }
 
 .gallery-grid img{
+
 width:100%;
 border-radius:10px;
+
 }
 
 footer{
+
 background:black;
 padding:20px;
+
 }
