@@ -1,118 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+body{
+margin:0;
+font-family:Arial;
+background:#111;
+color:white;
+}
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+.hero{
+background:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") center/cover;
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
 
-<title>Krishna Fast Food & Biryani Point</title>
+.hero-text h1{
+font-size:60px;
+}
 
-<link rel="stylesheet" href="style.css">
+.btn{
+background:red;
+padding:15px 30px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
 
-</head>
+section{
+padding:60px;
+text-align:center;
+}
 
-<body>
+.menu-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
 
-<header class="hero">
+.menu-card{
+background:#222;
+border-radius:10px;
+padding:15px;
+transition:0.3s;
+}
 
-<div class="hero-text">
-<h1>Krishna Fast Food & Biryani Point</h1>
-<p>Delicious Fast Food & Biryani in Medchal</p>
+.menu-card:hover{
+transform:scale(1.05);
+}
 
-<a href="tel:08885330069" class="btn">Call Now</a>
-</div>
+.menu-card img{
+width:100%;
+border-radius:10px;
+}
 
-</header>
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+}
 
+.gallery-grid img{
+width:100%;
+border-radius:10px;
+}
 
-<section class="about">
-
-<h2>About Our Restaurant</h2>
-
-<p>
-Krishna Fast Food & Biryani Point is a budget friendly fast food restaurant
-located in Medchal. We serve tasty biryani, noodles, fried rice and meals
-for dine-in, takeaway and delivery.
-</p>
-
-</section>
-
-
-
-<section class="menu">
-
-<h2>Popular Menu</h2>
-
-<div class="menu-container">
-
-<div class="menu-card">
-<img src="https://source.unsplash.com/400x300/?biryani">
-<h3>Chicken Biryani</h3>
-<p>₹180</p>
-</div>
-
-<div class="menu-card">
-<img src="https://source.unsplash.com/400x300/?fried-rice">
-<h3>Fried Rice</h3>
-<p>₹120</p>
-</div>
-
-<div class="menu-card">
-<img src="https://source.unsplash.com/400x300/?noodles">
-<h3>Noodles</h3>
-<p>₹110</p>
-</div>
-
-<div class="menu-card">
-<img src="https://source.unsplash.com/400x300/?south-indian-food">
-<h3>Meals</h3>
-<p>₹100</p>
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="gallery">
-
-<h2>Food Gallery</h2>
-
-<div class="gallery-grid">
-
-<img src="https://source.unsplash.com/400x400/?biryani">
-<img src="https://source.unsplash.com/400x400/?indian-food">
-<img src="https://source.unsplash.com/400x400/?fried-chicken">
-<img src="https://source.unsplash.com/400x400/?restaurant-food">
-<img src="https://source.unsplash.com/400x400/?dosa">
-<img src="https://source.unsplash.com/400x400/?noodles">
-
-</div>
-
-</section>
-
-
-
-<section class="location">
-
-<h2>Visit Us</h2>
-
-<iframe
-src="https://www.google.com/maps?q=Medchal%20Ghanpur%20Shamirpet%20Rd&output=embed"
-width="100%"
-height="350">
-</iframe>
-
-</section>
-
-
-
-<footer>
-
-<p>© 2026 Krishna Fast Food & Biryani Point</p>
-
-</footer>
-
-</body>
-</html>
+footer{
+background:black;
+padding:20px;
+}
