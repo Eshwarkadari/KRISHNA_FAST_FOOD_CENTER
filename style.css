@@ -1,7 +1,7 @@
 body{
 
 margin:0;
-font-family:Poppins;
+font-family:Arial;
 background:#111;
 color:white;
 
@@ -11,7 +11,6 @@ nav{
 
 display:flex;
 justify-content:space-between;
-align-items:center;
 padding:15px 40px;
 background:black;
 
@@ -19,16 +18,16 @@ background:black;
 
 nav ul{
 
-list-style:none;
 display:flex;
 gap:20px;
+list-style:none;
 
 }
 
 nav a{
 
-text-decoration:none;
 color:white;
+text-decoration:none;
 
 }
 
@@ -37,6 +36,7 @@ color:white;
 background:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") center/cover;
 height:90vh;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
@@ -45,11 +45,11 @@ text-align:center;
 
 .hero h1{
 
-font-size:60px;
+font-size:50px;
 
 }
 
-.btn{
+.order-btn{
 
 background:red;
 padding:15px 30px;
@@ -66,7 +66,7 @@ text-align:center;
 
 }
 
-.menu-grid{
+#menu-container{
 
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -79,13 +79,6 @@ gap:20px;
 background:#222;
 border-radius:10px;
 overflow:hidden;
-transition:0.3s;
-
-}
-
-.menu-card:hover{
-
-transform:scale(1.05);
 
 }
 
@@ -97,17 +90,28 @@ object-fit:cover;
 
 }
 
-.gallery-grid{
+.menu-card h3{
 
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:10px;
+margin:10px;
 
 }
 
-.gallery-grid img{
+.menu-card button{
 
-width:100%;
+margin:10px;
+padding:10px 20px;
+background:red;
+border:none;
+color:white;
+cursor:pointer;
+
+}
+
+.review{
+
+background:#222;
+margin:10px;
+padding:20px;
 border-radius:10px;
 
 }
